@@ -1,5 +1,0 @@
-Crear el proyecto
-npx create-expo-app@latest finance-app --template blank 
-
-Permitir que el proyecto se pueda ejecutar en web
-npx expo install react-dom react-native-web @expo/metro-runtime
