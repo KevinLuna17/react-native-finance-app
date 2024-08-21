@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Main } from "./components/Main";
+import { ScreenLayuout } from "./components/ScreenLayout";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Text style={{color:"white"}}>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaProvider>
+      <ScreenLayuout>
+        <StatusBar style="light" />
+        <Main />
+      </ScreenLayuout>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
