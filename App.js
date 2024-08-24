@@ -7,7 +7,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <ScreenLayuout>
-        <StatusBar style="light" />
+        <StatusBar style="auto" />
         <Main />
       </ScreenLayuout>
     </SafeAreaProvider>
