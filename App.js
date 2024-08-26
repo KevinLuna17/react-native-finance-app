@@ -1,15 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Main } from "./components/Main";
-import { ScreenLayuout } from "./components/ScreenLayout";
+import { ScreenLayout } from "./components/ScreenLayout";
 
 export default function App() {
   return (
     <SafeAreaProvider>
-      <ScreenLayuout>
+      <ScreenLayout>
         <StatusBar style="auto" />
         <Main />
-      </ScreenLayuout>
+      </ScreenLayout>
     </SafeAreaProvider>
   );
 }

@@ -4,7 +4,7 @@ const fondo = require("../assets/wallpaper.jpg");
 
 export function FondoImage() {
   return (
-    <View className="flex-1 bg-white">
+    <View className="flex-1">
       <Image
         source={fondo}
         style={{
